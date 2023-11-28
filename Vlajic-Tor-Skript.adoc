@@ -1,0 +1,45 @@
+= Maßnahmen: Tor-Netzwerk
+Stevan Vlajic
+1.0.0, {docdate}: SocialMedia
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+:experimental:
+
+== Übersicht
+In der Präsentation werden folgende Themen behandelt:
+
+* Allgemeines/Einführung
+* Technische Erklärung
+** Grafiken
+* Vor und Nachteile
+* Für wen ist das Tor-Netzwerk gedacht?
+* Hosting -> Werde teil von Tor
+* Beispiele für Tor-Unternehmen
+* Gefahren von Tor
+* Live-Demo
+* Wie hoste ich etwas auf dem Tor-Netzwerk?
+
+
+== Allgemeine Einführung
+Das Synonym TOR steht hierbei für "The Onion Router". Das Projekt TOR wurde von dem U.S Naval Research Laboratory ins Leben gerufen, um eine
+sichere Firmeninterne Kommunikationsmöglichkeit gewährleisten zu können.
+
+Folgende Entwickler haben die führende Rolle bei der Entwicklung des Tor-Netzwerkes übernommen:
+
+* Roger Dingledine
+* Nick Matheweson
+* Paul Syverson
+
+Paul Syverson und Nick Matheweson spielten bei der Forschung eine große Rolle. Die Hauptsächliche Entwicklung übernahmen aber dafür alle drei erwähnten Programmierer.
+
+Die erwähnte Organisation hinter TOR ist heutzutage keine Forschungsgruppe mehr, sondern  eine gemeinnützige Organisation,
+welche sich auf Schutz von Privatsphäre und auf das Recht der Anonymität im Internet spezialisiert hat.
+
+Um das Tor-Netzwerk für die Allgemeinheit benutzbarer zu machen, wurde der Tor-Browser entwickelt, welcher primär den Datenverkehr durch das Tor-Netzwerk regelt, leitet und steuert. Dieser Browser basiert
+auf dem herkömmlichen und sehr weit verbreiteten Firefox Browser mit zusätzlichen Privatsphäre & Sicherheitsfunktionen.
+
+Da das Tor-Projekt zur Gänze ein Open-Source Projekt darstellt war demnach nicht nur das Team hinter dem U.S Naval Research Laboratory für die Entwicklung des Projektes zuständig, sondern auch zahlreiche weitere über den Globus verteilte Entwickler, welche zum Projekt Tor "contributet" haben.
+
