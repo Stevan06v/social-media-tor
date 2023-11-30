@@ -441,7 +441,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Stevan Vlajic</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2023-11-28</span>
+<span id="revdate">2023-11-30</span>
 <br><span id="revremark">SocialMedia</span>
 </div>
 <div id="toc" class="toc2">
@@ -449,6 +449,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_übersicht">1. Übersicht</a></li>
 <li><a href="#_allgemeine_einführung">2. Allgemeine Einführung</a></li>
+<li><a href="#_wie_funktioniert_tor">3. Wie funktioniert Tor?</a>
+<ul class="sectlevel2">
+<li><a href="#_standard_way_to_go">3.1. Standard Way-To-Go:</a></li>
+<li><a href="#_wie_funktioniert_tor_2">3.2. Wie funktioniert TOR?:</a></li>
+<li><a href="#_der_tor_browser">3.3. Der TOR-BROWSER:</a></li>
+</ul>
+</li>
+<li><a href="#_vor_nachteile">4. Vor &amp; Nachteile</a></li>
+<li><a href="#_für_wen_ist_tor_gedacht">5. Für wen ist Tor gedacht?</a></li>
+<li><a href="#_werde_teil_vom_tor_netzwerk">6. Werde Teil vom Tor-Netzwerk</a></li>
+<li><a href="#_darknet_shops">7. Darknet-Shops</a>
+<ul class="sectlevel2">
+<li><a href="#_silk_road">7.1. Silk-Road</a></li>
+<li><a href="#_alphabay">7.2. Alphabay</a></li>
+</ul>
+</li>
+<li><a href="#_how_to_sell_drugs_online_fast_docker_demo">8. How to Sell Drugs Online (fast) &#8594; Docker-Demo</a>
+<ul class="sectlevel2">
+<li><a href="#_quellen">8.1. QUELLEN</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -523,7 +544,444 @@ sichere Firmeninterne Kommunikationsmöglichkeit gewährleisten zu können.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Paul Syverson und Nick Matheweson spielten bei der Forschung eine große Rolle. Die Hauptsächliche Entwicklung übernahmen aber dafür alle drei erwähnten Programierer.</p>
+<p>Paul Syverson und Nick Matheweson spielten bei der Forschung eine große Rolle. Die Hauptsächliche Entwicklung übernahmen aber dafür alle drei erwähnten Programmierer.</p>
+</div>
+<div class="paragraph">
+<p>Die erwähnte Organisation hinter TOR ist heutzutage keine Forschungsgruppe mehr, sondern  eine gemeinnützige Organisation,
+welche sich auf Schutz von Privatsphäre und auf das Recht der Anonymität im Internet spezialisiert hat.</p>
+</div>
+<div class="paragraph">
+<p>Um das Tor-Netzwerk für die Allgemeinheit benutzbarer zu machen, wurde der Tor-Browser entwickelt, welcher primär den Datenverkehr durch das Tor-Netzwerk regelt, leitet und steuert. Dieser Browser basiert
+auf dem herkömmlichen und sehr weit verbreiteten Firefox Browser mit zusätzlichen Privatsphäre &amp; Sicherheitsfunktionen.</p>
+</div>
+<div class="paragraph">
+<p>Da das Tor-Projekt zur Gänze ein Open-Source Projekt darstellt war demnach nicht nur das Team hinter dem U.S Naval Research Laboratory für die Entwicklung des Projektes zuständig, sondern auch zahlreiche weitere über den Globus verteilte Entwickler, welche zum Projekt Tor "contributet" haben.</p>
+</div>
+<div class="paragraph">
+<p>Kombiniert man nun TOR mit Tails-OS laufend auf CUBES OS stehen einem alle Türen zur Sicherheit "geschlossen :)". Durch diese Kombination ist man vor Malware, Spionage, Tracking, etc.. voll und ganz geschützt.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wie_funktioniert_tor">3. Wie funktioniert Tor?</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_standard_way_to_go">3.1. Standard Way-To-Go:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Jeder Rechner im Netzwerk, auch der Client, ist durch eine eindeutige IP-Adresse identifizierbar. Dies ist der erste Schritt in der Kommunikation und sollte sicherheitsbewusst gehandhabt werden.</p>
+</li>
+<li>
+<p>Die Eingabe einer Webadresse startet den Prozess, die dazugehörige IP-Adresse zu ermitteln.</p>
+</li>
+<li>
+<p>Der Domain Name System (DNS)-Server(großes Wörterbuch zu IP&#8217;s und Domain-Namen) übersetzt die Webadresse in eine IP-Adresse. Dieser schickt die IP-Adresse zurück an den Client, also dem Nutzer.</p>
+</li>
+<li>
+<p>Die Verbindung zum Webserver wird hergestellt. Hierbei könnten unsichere Protokolle oder fehlende Verschlüsselung potenzielle Angriffspunkte darstellen.</p>
+</li>
+<li>
+<p>Der Webserver sendet die angeforderten Daten in Form eines Responses zurück. Unverschlüsselte Übertragungen könnten dazu führen, dass sensible Informationen abgefangen werden können.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>(Frage an das Publikum)
+Wer sieht hierbei ein Problem?</p>
+</div>
+<div class="paragraph">
+<p>Das Problem ist die fehlende Anonymität, da der kontaktierte Youtube-Webserver, die Public-IP-Adresse vom Client kennt. Somit kann der Client jederzeit zurückverfolgt werden und es ist einfach nachvollziehbar, welcher Internetprovider hinter der Public-IP steckt. Dadurch kann man, zwar durch Umwege, aber jedoch relativ einfach die Adresse des Endnutzers herausfinden und diesem bei bedarf auf unzählige Arten und Weisen schaden.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wie_funktioniert_tor_2">3.2. Wie funktioniert TOR?:</h3>
+<div class="paragraph">
+<p>Das Ziel des Tor-Netzwerks besteht darin, die Anonymität der Benutzer zu wahren, sodass niemand wissen soll, wer zu einer bestimmten IP-Adresse gehört. Dies wird durch die Einbeziehung verschiedener Knotenpunkte in das Netzwerk erreicht, wobei jeder Knotenpunkt eine spezifische Funktion hat.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Knotenpunkte im Tor-Netzwerk:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Eintrittspunkt (Entry Node):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Funktion: Der Eintrittspunkt ist der erste Knotenpunkt, den der Datenverkehr betritt.
+Verschlüsselung: Die Verbindung zum Eintrittspunkt erfolgt verschlüsselt, um die IP-Adresse des Benutzers zu schützen.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Weiterleitungspunkt (Middle-Relay):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Funktion: Der Weiterleitungspunkt leitet den verschlüsselten Datenverkehr vom Eintrittspunkt zum Austrittspunkt weiter.
+Verschlüsselung: Die Kommunikation bleibt weiterhin verschlüsselt, um die Anonymität zu bewahren.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Austrittspunkt (Exit Node):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Funktion: Der Austrittspunkt ist der letzte Knotenpunkt, an dem die Daten entschlüsselt und zum ursprünglichen Ziel geschickt werden.
+Verschlüsselung: Die Datenverbindung wird am Austrittspunkt entschlüsselt.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_der_tor_browser">3.3. Der TOR-BROWSER:</h3>
+<div class="paragraph">
+<p>Der Tor-Browser stellt eine effektive Möglichkeit dar, das Tor-Netzwerk zu nutzen und die Privatsphäre der Benutzer zu schützen. Es ist essenziell, den Browser von der offiziellen Webseite des Tor-Projekts <a href="https://www.torproject.org/" class="bare">https://www.torproject.org/</a> herunterzuladen, um sicherzustellen, dass keine Veränderungen am Code vorgenommen wurden, die die Sicherheit beeinträchtigen könnten.</p>
+</div>
+<div class="paragraph">
+<p>Um eine höhere Anonymität zu gewährleisten, sollten Benutzer bestimmte Gewohnheiten ablegen, die potenziell ihre Identität preisgeben könnten. Dies beinhaltet das Vermeiden von personalisierten Logins und das Zurücklassen von persönlichen Informationen.</p>
+</div>
+<div class="paragraph">
+<p>Die Einstellung der Standardsprache des Tor-Browsers auf Englisch trägt zur Anonymität bei, da viele Webseiten die Browsersprache kennen und eine gebräuchliche Sprache auf den Benutzer hinweisen könnte. Um noch weiter in der Masse zu verschwinden, empfiehlt es sich, gängige Verhaltensweisen zu vermeiden und beispielsweise Youtube-Videos mit doppelter Geschwindigkeit anzusehen.</p>
+</div>
+<div class="paragraph">
+<p>Die Nutzung des Tor-Browsers sollte nicht auf eine bestimmte Personengruppe beschränkt werden, um individuelle Nutzermuster zu verschleiern. Es ist wichtig zu beachten, dass der Tor-Browser effektiv verhindert, dass Webseiten die tatsächliche IP-Adresse des Benutzers sehen. Stattdessen wird die IP-Adresse des Exit-Nodes angezeigt, was zur Anonymität beiträgt.</p>
+</div>
+<div class="paragraph">
+<p>Um eine umfassende Privatsphäre und Sicherheit zu gewährleisten, ist es entscheidend, nicht nur den Tor-Browser zu verwenden, sondern auch die generellen Online-Gewohnheiten zu überdenken und bewusster zu gestalten. Indem diese Praktiken berücksichtigt werden, können Benutzer die Vorteile des Tor-Netzwerks optimal nutzen und ihre digitale Identität schützen.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vor_nachteile">4. Vor &amp; Nachteile</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Vorteile des Tor-Netzwerks:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Anonymität:
+Das Tor-Netzwerk bietet eine hohe Anonymität, da die Daten durch mehrere Knotenpunkte geleitet werden, wodurch es schwierig wird, die wahre Identität eines Benutzers zu ermitteln.</p>
+</li>
+<li>
+<p>Zensurumgehung:
+Tor ermöglicht es Benutzern, Zensur zu umgehen, da der Datenverkehr durch verschiedene Länder geleitet wird, wodurch geografische Beschränkungen umgangen werden können.</p>
+</li>
+<li>
+<p>Privatsphäre:
+Durch die Verschlüsselung des Datenverkehrs wird die Privatsphäre der Benutzer geschützt, da Dritte Schwierigkeiten haben, den Inhalt der Kommunikation zu überwachen.</p>
+</li>
+<li>
+<p>Dezentralisiertes Netzwerk:
+Tor ist dezentralisiert und wird von einer Vielzahl von Freiwilligen betrieben, was es schwieriger macht, das Netzwerk zu kontrollieren oder zu zensieren.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Nachteile des Tor-Netzwerks:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Langsamere Geschwindigkeiten:
+Aufgrund der Umleitung des Datenverkehrs durch mehrere Server kann die Geschwindigkeit im Tor-Netzwerk im Vergleich zu direkten Verbindungen langsamer sein.</p>
+</li>
+<li>
+<p>Nicht für alle Anwendungen geeignet:
+Aufgrund der langsamen Geschwindigkeiten und der Art der Anonymisierung ist Tor nicht für alle Arten von Internetaktivitäten geeignet, insbesondere für datenintensive Anwendungen.</p>
+</li>
+<li>
+<p>Vertrauen in Exit-Nodes:
+Benutzer müssen darauf vertrauen, dass die Betreiber der Exit-Nodes die Daten nicht abfangen oder manipulieren, da die Entschlüsselung des Datenverkehrs am Exit-Node erfolgt.</p>
+</li>
+<li>
+<p>Missbrauch durch Kriminelle:
+Aufgrund der Anonymität im Tor-Netzwerk kann es auch von kriminellen Akteuren genutzt werden, um illegale Aktivitäten zu verschleiern.</p>
+</li>
+<li>
+<p>Eingeschränkter Schutz vor Endpunktangriffen:
+Das Tor-Netzwerk bietet keinen vollständigen Schutz vor Endpunktangriffen. Wenn das Endgerät eines Benutzers unsicher ist, kann die Anonymität des Tor-Netzwerks beeinträchtigt werden.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Zusammenfassend bietet das Tor-Netzwerk einen effektiven Schutz der Privatsphäre und Anonymität, aber es ist wichtig, die spezifischen Anforderungen und Einschränkungen zu beachten, um es angemessen zu nutzen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_für_wen_ist_tor_gedacht">5. Für wen ist Tor gedacht?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Für folgende Personengruppen ist das Tor-Netzwerk und somit auch der Tor-Browser gedacht</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Journalisten und Aktivisten:
+Personen, die in Ländern mit eingeschränkter Meinungsfreiheit leben oder arbeiten, nutzen Tor, um ihre Online-Aktivitäten zu schützen und Zensur zu umgehen.</p>
+</li>
+<li>
+<p>Whistleblower:
+Menschen, die sensible Informationen veröffentlichen möchten, können Tor verwenden, um ihre Identität zu schützen und Repressalien zu vermeiden.</p>
+</li>
+<li>
+<p>Nutzer in Ländern mit Überwachung:
+In Ländern, in denen die Internetaktivitäten stark überwacht werden, bietet Tor eine Möglichkeit, sich vor staatlicher Überwachung zu schützen.</p>
+</li>
+<li>
+<p>Bürgerrechtler:
+Personen, die sich für Bürgerrechte und Datenschutz engagieren, nutzen Tor, um ihre Online-Aktivitäten vor unerwünschter Überwachung zu schützen.</p>
+</li>
+<li>
+<p>Menschen in autoritären Regimen:
+Individuen, die in Ländern mit autoritären Regimen leben, verwenden Tor, um ihre digitale Freiheit zu bewahren und Zensur zu umgehen.</p>
+</li>
+<li>
+<p>Privatnutzer mit Datenschutzbedenken:
+Personen, die ihre Privatsphäre im Internet schützen möchten, verwenden Tor, um ihre IP-Adresse zu verbergen und ihre Online-Aktivitäten zu verschleiern.</p>
+</li>
+<li>
+<p>Forscher und Sicherheitsexperten:
+Personen, die Sicherheitsforschung betreiben oder Schwachstellen im Netzwerk identifizieren möchten, nutzen Tor, um anonyme und sichere Tests durchzuführen.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Es ist wichtig zu beachten, dass Tor nicht nur für Personen in kritischen Situationen relevant ist, sondern auch für jeden, der seine Online-Privatsphäre schützen möchte. Die Vielseitigkeit von Tor macht es zu einem Werkzeug für verschiedene Benutzergruppen, die ein Interesse an der Wahrung ihrer Anonymität haben.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_werde_teil_vom_tor_netzwerk">6. Werde Teil vom Tor-Netzwerk</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Exit-Node:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sicherheitsrisiken: Als unsicher und potenziell illegal geltend, da der Exit-Node den unverschlüsselten Datenverkehr entschlüsselt und somit den Datenverkehr des Benutzers sichtbar macht.
+Hosting-Verantwortlichkeiten: Personen, die als Exit-Node fungieren, müssen sich bewusst sein, dass sie für den Datenverkehr verantwortlich sind, der ihren Node passiert. Dies könnte rechtliche Konsequenzen haben, wenn illegale Aktivitäten darüber durchgeführt werden.
+Middle-Node:</p>
+</li>
+<li>
+<p>"Hosting-Starter Pack": Ein sichererer Knotenpunkt, der den verschlüsselten Datenverkehr durch das Tor-Netzwerk weiterleitet. Geeignet für Einsteiger im Hosting-Bereich.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Entry-Node:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Upgrades nach Hosting-Länge: Eintrittspunkt mit der Möglichkeit zum Upgrade erst nach einer bestimmten Hosting-Dauer. Dies dient als Schutzmechanismus und erfordert ein gewisses Maß an Erfahrung.
+Geräte für das Hosting:</p>
+</li>
+<li>
+<p>Empfohlene Spezifikationen: Ein Hosting-Setup mit einer Empfehlung von 40 MB/s Übertragungsgeschwindigkeit und 512 MB bis 1 GB RAM.
+Vielfältige Optionen: Von alten Android-Smartphones über Raspberry Pi Pico bis hin zu Cloud-Providern wie Linode, OC und DigitalOcean.
+Config:</p>
+</li>
+<li>
+<p>Konfigurationsempfehlungen gemäß den Richtlinien des Tor-Projekts: Link zur Konfigurationsanleitung.
+Sorgfältige Einhaltung dieser Richtlinien ist entscheidend, um einen sicheren und effizienten Node-Betrieb zu gewährleisten.
+Phasen:</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Tag 3-8):</strong> Set-Up Brennweitenmessung:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Initiierung des Hosting-Prozesses, während Messungen und Anpassungen vorgenommen werden, um die Leistung des Nodes zu optimieren.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Tag 8-64):</strong> Upgrade auf Entry-Node:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nach einer erfolgreichen Hosting-Phase kann der Middle-Node aufgerüstet werden, um die Funktionen eines Entry-Nodes zu übernehmen.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Tag 68+):</strong> TOR-"Veteran":</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Erreichen des Status eines TOR-"Veterans" markiert einen fortgeschrittenen Status im Tor-Netzwerk, kommt jedoch ohne funktionalen Nutzen aus. Die beschriebenen Phasen zeigen, wie ein individueller Knotenpunkt im Tor-Netzwerk aufgebaut werden kann, von einfachen Hosting-Praktiken bis zum erfahrenen Status als TOR-"Veteran".</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Exit-Node:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sicherheitsrisiken: Als unsicher und potenziell illegal geltend, da der Exit-Node den unverschlüsselten Datenverkehr entschlüsselt und somit den Datenverkehr des Benutzers sichtbar macht.
+Hosting-Verantwortlichkeiten: Personen, die als Exit-Node fungieren, müssen sich bewusst sein, dass sie für den Datenverkehr verantwortlich sind, der ihren Node passiert. Dies könnte rechtliche Konsequenzen haben, wenn illegale Aktivitäten darüber durchgeführt werden.
+Middle-Node:</p>
+</li>
+<li>
+<p>"Hosting-Starter Pack": Ein sichererer Knotenpunkt, der den verschlüsselten Datenverkehr durch das Tor-Netzwerk weiterleitet. Geeignet für Einsteiger im Hosting-Bereich.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Entry-Node:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Upgrades nach Hosting-Länge: Eintrittspunkt mit der Möglichkeit zum Upgrade erst nach einer bestimmten Hosting-Dauer. Dies dient als Schutzmechanismus und erfordert ein gewisses Maß an Erfahrung.
+Geräte für das Hosting:</p>
+</li>
+<li>
+<p>Empfohlene Spezifikationen: Ein Hosting-Setup mit einer Empfehlung von 40 MB/s Übertragungsgeschwindigkeit und 512 MB bis 1 GB RAM.
+Vielfältige Optionen: Von alten Android-Smartphones über Raspberry Pi Pico bis hin zu Cloud-Providern wie Linode, OC und DigitalOcean.
+Config:</p>
+</li>
+<li>
+<p>Konfigurationsempfehlungen gemäß den Richtlinien des Tor-Projekts: Link zur Konfigurationsanleitung.
+Sorgfältige Einhaltung dieser Richtlinien ist entscheidend, um einen sicheren und effizienten Node-Betrieb zu gewährleisten.
+Phasen:</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Tag 3-8):</strong> Set-Up Brennweitenmessung:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Initiierung des Hosting-Prozesses, während Messungen und Anpassungen vorgenommen werden, um die Leistung des Nodes zu optimieren.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Tag 8-64):</strong> Upgrade auf Entry-Node:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nach einer erfolgreichen Hosting-Phase kann der Middle-Node aufgerüstet werden, um die Funktionen eines Entry-Nodes zu übernehmen.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Tag 68+):</strong> TOR-"Veteran":</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Erreichen des Status eines TOR-"Veterans" markiert einen fortgeschrittenen Status im Tor-Netzwerk, kommt jedoch ohne funktionalen Nutzen aus. Die beschriebenen Phasen zeigen, wie ein individueller Knotenpunkt im Tor-Netzwerk aufgebaut werden kann, von einfachen Hosting-Praktiken bis zum erfahrenen Status als TOR-"Veteran".</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_darknet_shops">7. Darknet-Shops</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_silk_road">7.1. Silk-Road</h3>
+<div class="paragraph">
+<p>Silk Road, 2011 von Ross Ulbricht gegründet, war ein Darknet-Marktplatz. Nutzer konnten dort Verkaufsanzeigen erstellen und illegale Produkte wie Drogen kaufen. Die Plattform ermöglichte anonyme Transaktionen über Kryptowährungen.</p>
+</div>
+<div class="paragraph">
+<p>Im Jahr 2013 wurde die Silk Road-Domain beschlagnahmt, und Ross Ulbricht wurde vom FBI festgenommen. Diese Maßnahmen markierten das Ende des illegalen Darknet-Marktplatzes und demonstrierten die Bemühungen der Strafverfolgungsbehörden gegen illegale Online-Aktivitäten.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alphabay">7.2. Alphabay</h3>
+<div class="paragraph">
+<p>AlphaBay, gegründet 2014 von Alexandre Cazes, war ein großer Darknet-Marktplatz für illegale Waren wie Drogen und Hacking-Tools. Die Plattform ermöglichte anonyme Transaktionen mit Kryptowährungen und bot Sicherheitsfunktionen wie das ESCROW-Bezahlsystem.</p>
+</div>
+<div class="paragraph">
+<p>Im Juli 2017 wurde AlphaBay von internationalen Strafverfolgungsbehörden geschlossen. Alexandre Cazes, der Gründer, wurde in Thailand festgenommen und beging Selbstmord in seiner Gefängniszelle. Die Schließung markierte einen Sieg im Kampf gegen illegale Darknet-Aktivitäten, ähnlich wie bei Silk Road, und löste Diskussionen über die Regulierung von Online-Marktplätzen aus.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_sell_drugs_online_fast_docker_demo">8. How to Sell Drugs Online (fast) &#8594; Docker-Demo</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Link: <a href="https://github.com/Stevan06v/nextjs-hidden-service/" class="bare">https://github.com/Stevan06v/nextjs-hidden-service/</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/howto.png" alt="howto"></span></p>
+</div>
+<div class="sect2">
+<h3 id="_quellen">8.1. QUELLEN</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Erfahrung durch Nutzung &amp; eigene Projektumsetzungen</p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=fsfoqdqyykI" class="bare">https://www.youtube.com/watch?v=fsfoqdqyykI</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=KlgjEGd-Gmk&amp;t=123s" class="bare">https://www.youtube.com/watch?v=KlgjEGd-Gmk&amp;t=123s</a></p>
+</li>
+<li>
+<p><a href="https://de.wikipedia.org/wiki/Tor_(Netzwerk" class="bare">https://de.wikipedia.org/wiki/Tor_(Netzwerk</a>)</p>
+</li>
+<li>
+<p><a href="https://community.torproject.org/relay/relays-requirements/" class="bare">https://community.torproject.org/relay/relays-requirements/</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Stevan06v/nextjs-hidden-service" class="bare">https://github.com/Stevan06v/nextjs-hidden-service</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=QSxUG7kBjPQ" class="bare">https://www.youtube.com/watch?v=QSxUG7kBjPQ</a></p>
+</li>
+<li>
+<p><a href="https://de.wikipedia.org/wiki/Silk_Road" class="bare">https://de.wikipedia.org/wiki/Silk_Road</a></p>
+</li>
+<li>
+<p><a href="https://de.wikipedia.org/wiki/AlphaBay" class="bare">https://de.wikipedia.org/wiki/AlphaBay</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>1,883 Wörter</p>
+</div>
 </div>
 </div>
 </div>
@@ -531,7 +989,7 @@ sichere Firmeninterne Kommunikationsmöglichkeit gewährleisten zu können.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2023-11-28 22:40:22 +0100
+Last updated 2023-11-30 01:40:38 +0100
 </div>
 </div>
 </body>

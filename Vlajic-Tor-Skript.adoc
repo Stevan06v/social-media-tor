@@ -199,9 +199,72 @@ Phasen:
 
 ** Erreichen des Status eines TOR-"Veterans" markiert einen fortgeschrittenen Status im Tor-Netzwerk, kommt jedoch ohne funktionalen Nutzen aus. Die beschriebenen Phasen zeigen, wie ein individueller Knotenpunkt im Tor-Netzwerk aufgebaut werden kann, von einfachen Hosting-Praktiken bis zum erfahrenen Status als TOR-"Veteran".
 
+* Exit-Node:
+
+** Sicherheitsrisiken: Als unsicher und potenziell illegal geltend, da der Exit-Node den unverschlüsselten Datenverkehr entschlüsselt und somit den Datenverkehr des Benutzers sichtbar macht.
+Hosting-Verantwortlichkeiten: Personen, die als Exit-Node fungieren, müssen sich bewusst sein, dass sie für den Datenverkehr verantwortlich sind, der ihren Node passiert. Dies könnte rechtliche Konsequenzen haben, wenn illegale Aktivitäten darüber durchgeführt werden.
+Middle-Node:
+
+** "Hosting-Starter Pack": Ein sichererer Knotenpunkt, der den verschlüsselten Datenverkehr durch das Tor-Netzwerk weiterleitet. Geeignet für Einsteiger im Hosting-Bereich.
+
+* Entry-Node:
+
+** Upgrades nach Hosting-Länge: Eintrittspunkt mit der Möglichkeit zum Upgrade erst nach einer bestimmten Hosting-Dauer. Dies dient als Schutzmechanismus und erfordert ein gewisses Maß an Erfahrung.
+Geräte für das Hosting:
+
+** Empfohlene Spezifikationen: Ein Hosting-Setup mit einer Empfehlung von 40 MB/s Übertragungsgeschwindigkeit und 512 MB bis 1 GB RAM.
+Vielfältige Optionen: Von alten Android-Smartphones über Raspberry Pi Pico bis hin zu Cloud-Providern wie Linode, OC und DigitalOcean.
+Config:
+
+** Konfigurationsempfehlungen gemäß den Richtlinien des Tor-Projekts: Link zur Konfigurationsanleitung.
+Sorgfältige Einhaltung dieser Richtlinien ist entscheidend, um einen sicheren und effizienten Node-Betrieb zu gewährleisten.
+Phasen:
+
+* *Tag 3-8):* Set-Up Brennweitenmessung:
+
+** Initiierung des Hosting-Prozesses, während Messungen und Anpassungen vorgenommen werden, um die Leistung des Nodes zu optimieren.
+
+* *Tag 8-64):* Upgrade auf Entry-Node:
+
+** Nach einer erfolgreichen Hosting-Phase kann der Middle-Node aufgerüstet werden, um die Funktionen eines Entry-Nodes zu übernehmen.
+
+* *Tag 68+):* TOR-"Veteran":
+
+** Erreichen des Status eines TOR-"Veterans" markiert einen fortgeschrittenen Status im Tor-Netzwerk, kommt jedoch ohne funktionalen Nutzen aus. Die beschriebenen Phasen zeigen, wie ein individueller Knotenpunkt im Tor-Netzwerk aufgebaut werden kann, von einfachen Hosting-Praktiken bis zum erfahrenen Status als TOR-"Veteran".
+
+
+== Darknet-Shops
+=== Silk-Road
+
+Silk Road, 2011 von Ross Ulbricht gegründet, war ein Darknet-Marktplatz. Nutzer konnten dort Verkaufsanzeigen erstellen und illegale Produkte wie Drogen kaufen. Die Plattform ermöglichte anonyme Transaktionen über Kryptowährungen.
+
+Im Jahr 2013 wurde die Silk Road-Domain beschlagnahmt, und Ross Ulbricht wurde vom FBI festgenommen. Diese Maßnahmen markierten das Ende des illegalen Darknet-Marktplatzes und demonstrierten die Bemühungen der Strafverfolgungsbehörden gegen illegale Online-Aktivitäten.
+
+=== Alphabay
+
+AlphaBay, gegründet 2014 von Alexandre Cazes, war ein großer Darknet-Marktplatz für illegale Waren wie Drogen und Hacking-Tools. Die Plattform ermöglichte anonyme Transaktionen mit Kryptowährungen und bot Sicherheitsfunktionen wie das ESCROW-Bezahlsystem.
+
+Im Juli 2017 wurde AlphaBay von internationalen Strafverfolgungsbehörden geschlossen. Alexandre Cazes, der Gründer, wurde in Thailand festgenommen und beging Selbstmord in seiner Gefängniszelle. Die Schließung markierte einen Sieg im Kampf gegen illegale Darknet-Aktivitäten, ähnlich wie bei Silk Road, und löste Diskussionen über die Regulierung von Online-Marktplätzen aus.
+
+
+== How to Sell Drugs Online (fast) -> Docker-Demo
+
+* Link: https://github.com/Stevan06v/nextjs-hidden-service/
+
+image:img/howto.png[]
 
 
 
+=== QUELLEN
+* Erfahrung durch Nutzung & eigene Projektumsetzungen
+* https://www.youtube.com/watch?v=fsfoqdqyykI
+* https://www.youtube.com/watch?v=KlgjEGd-Gmk&t=123s
+* https://de.wikipedia.org/wiki/Tor_(Netzwerk)
+* https://community.torproject.org/relay/relays-requirements/
+* https://github.com/Stevan06v/nextjs-hidden-service
+* https://www.youtube.com/watch?v=QSxUG7kBjPQ
+* https://de.wikipedia.org/wiki/Silk_Road
+* https://de.wikipedia.org/wiki/AlphaBay
 
 
-
+1,883 Wörter
